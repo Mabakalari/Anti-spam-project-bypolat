@@ -62,8 +62,8 @@ client.on('guildMemberAdd', member => {
     
         return rand[Math.floor(Math.random()*rand.length)];
     }
-    if (member.guild.id == "537129932761989122") {
-      client.channels.get("542101137378115593").send(`${joinmessage()}`);
+    if (member.guild.id == "") {
+      client.channels.get("").send(`${joinmessage()}`);
     };
     });
     
@@ -73,8 +73,8 @@ client.on('guildMemberAdd', member => {
     
         return rand[Math.floor(Math.random()*rand.length)];
     }
-    if (member.guild.id == "537129932761989122") {
-      client.channels.get("542101137378115593").send(`${exitmessage()}`);
+    if (member.guild.id == "") {
+      client.channels.get("").send(`${exitmessage()}`);
     };
     });
 
@@ -101,7 +101,7 @@ client.on('message', async(message) => {
             case "invite":
             message.channel.startTyping();
             setTimeout(function() {
-                message.channel.send("https://discordapp.com/oauth2/authorize?client_id=537126219095736351&scope=bot&permissions=8");
+                message.channel.send("");
             }, 500);
             message.channel.stopTyping();
             break;
@@ -151,7 +151,7 @@ client.on('message', async(message) => {
             case "vote":
             message.channel.startTyping();
             setTimeout(function() {
-                message.channel.send("https://discordbots.org/bot/537126219095736351/vote");
+                message.channel.send("");
             }, 500);
             message.channel.stopTyping();
             break;
@@ -166,4 +166,4 @@ client.on('message', async(message) => {
 });
 
 //login here
-client.login(process.env.BOT_TOKEN);
+client.login("");
