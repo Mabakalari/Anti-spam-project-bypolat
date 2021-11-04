@@ -1,1 +1,1 @@
-worker: node RaidX.js
+worker: node shell.js
